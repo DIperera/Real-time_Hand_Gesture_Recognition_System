@@ -1,0 +1,28 @@
+🚀 Setup & Run Steps:
+1. Create a new virtual environment:
+= python -m venv venv
+2. Activate the virtual environment:
+= .\venv\Scripts\Activate.bat  ("activate.bat" This is for windows)
+3. Install dependencies:
+= pip install -r requirements.txt
+4. Run the application:
+= python main.py
+
+Controls:
+
+Press 'q' to quit
+Show your hand to the webcam (0-5 fingers will be recognized)
+Gestures: ✊ Fist, ☝️ Pointing, ✌️ Peace, 3️⃣ Three, 4️⃣ Four, 🖐️ Palm
+
+📦 What is venv?
+venv = Virtual Environment - An isolated Python folder that keeps project dependencies separate.
+
+📄 Important Files & Their Tasks:
+File	                    Task
+main.py	                Entry point - Starts webcam, captures frames, displays gestures & FPS, handles quit
+config.py	            Stores settings - Gesture names, emoji mappings, window title
+gesture_detector.py	    Core logic - Detects hand using skin color detection, counts fingers, identifies gestures
+requirements.txt	    Dependency list - opencv-python, numpy (tells pip what to install)
+hand_landmarker.task	Pre-trained model file - Used for hand landmark detection
+README.md	            Documentation - Setup instructions and project info
+.gitignore	            Git exclusions - Prevents venv, __pycache__ from being committed
