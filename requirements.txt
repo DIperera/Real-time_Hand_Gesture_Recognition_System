@@ -1,0 +1,14 @@
+# Hand Gesture Recognition Requirements
+# Simple OpenCV-based hand detection - works with all Python versions!
+
+# Computer Vision (only dependency needed!)
+opencv-python>=4.8.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Optional: For model training
+# tensorflow==2.15.0
+# scikit-learn==1.3.2
+# pandas==2.1.4
+# matplotlib==3.8.2
